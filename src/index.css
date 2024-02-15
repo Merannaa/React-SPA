@@ -1,13 +1,134 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+    --main-color: #1abc9c;
+    --second-color: #2c3e50;
 }
+.bg-outlet{
+    background-color: #1abc9c;
+}
+.bg-footer{
+    background-color: var(--second-color);
+}
+.bg-main{
+    background-color: #1A252F;
+    height:70px;
+}
+
+div .container1{
+    margin-top: 80px;
+    margin-bottom: 0;
+    min-height: calc(-80px + 100vh);
+}
+nav{
+    height: 86px;
+    background-color: #2c3e50;
+}
+
+nav .nav-link, .navbar-brand{
+    color: #fff!important;
+    
+}
+.about{
+    height: calc(100vh);
+}
+.line{
+    height: 4px;
+    width: 80px;
+    background-color: #fff;
+}
+.navbar-brand{
+    font-size: 32px;
+    font-weight: 700;
+}
+nav .nav-link:hover, .navbar-brand:hover{
+    color: #fff!important;
+    
+}
+nav .nav-link{
+    display: inline;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px;
+    border-radius:8px;
+    transition: all 1s;
+}
+.active{
+    background-color: var(--main-color);
+    padding: 8px;
+}
+nav .nav-link:hover{
+    background-color: var(--main-color);
+    padding: 8px;
+}
+nav .container{
+    width: 80%;
+}
+span{
+    font-size: 16px;
+    font-weight: 400;
+}
+footer{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 500px;
+    
+}
+span i{
+    font-size: 16px;
+    font-weight: 900;
+    color: #fff;
+    border: solid 1px #fff;
+}
+
+input{
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #1abc9c;
+}
+input:focus{
+    outline: none;
+}
+button:hover{
+    background-color: #1abc9c!important;
+}
+button:focus{
+    border: none;
+}
+::placeholder{
+    font-size: 14px;
+}
+.cursor {
+    cursor: pointer;
+}
+
+.image{
+    position: relative;
+    background-color: blue;
+}
+
+img{
+    width: 100%;
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    background-color:rgba(26, 188, 156, 0.5) ;
+    transition:all 0.6s;
+}
+.content:hover {
+    opacity: 1;
+}
+
+
+
